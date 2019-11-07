@@ -6,12 +6,14 @@ $(function() {
     
     $(window).on('load', function(event) {
         $('#preloader').delay(500).fadeOut(500);
-        $(".owl-carousel").owlCarousel({
-            center: true,
-            items: 2,
-            loop: false,
-            margin: 10,
-        });
+        // $(".owl-carousel").owlCarousel({
+        //     center: true,
+        //     items: 4,
+        //     autoHeight: true,
+        //     autoWidth: true,
+        //     loop: true,
+        //     margin: 10,
+        // });
     });
     
     
