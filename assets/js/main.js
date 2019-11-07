@@ -6,6 +6,12 @@ $(function() {
     
     $(window).on('load', function(event) {
         $('#preloader').delay(500).fadeOut(500);
+        $(".owl-carousel").owlCarousel({
+            center: true,
+            items: 2,
+            loop: false,
+            margin: 10,
+        });
     });
     
     
@@ -60,10 +66,10 @@ $(function() {
     
     //====== Magnific Popup
     
-    $('.video-popup').magnificPopup({
-        type: 'iframe'
-        // other options
-    });
+    // $('.video-popup').magnificPopup({
+    //     type: 'iframe'
+    //     // other options
+    // });
     
     
     //===== Back to top

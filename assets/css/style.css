@@ -757,8 +757,21 @@ p {
         color: #fff; }
 
 /*===========================
-    6.CALL TO ACTION css 
+      7.PORTFOLIO css 
 ===========================*/
+.portfolio-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f4f6f7; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .portfolio-area {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  @media (max-width: 767px) {
+    .portfolio-area {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+
 .contact-area {
   padding-top: 120px;
   padding-bottom: 120px; }
@@ -831,7 +844,7 @@ p.form-message.error {
   color: #f00; }
 
 /*===========================
-       7.FOOTER css 
+       8.FOOTER css 
 ===========================*/
 .footer-area {
   background-color: #f4f6f7; }
