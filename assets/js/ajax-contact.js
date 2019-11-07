@@ -26,7 +26,7 @@ $(function() {
 			$(formMessages).addClass('success');
 
 			// Set the message text.
-			$(formMessages).text(response);
+			$(formMessages).text('Thanks! We will get in touch soon.');
 
 			// Clear the form.
 			$('#contact-form input,#contact-form textarea').val('');
@@ -38,7 +38,7 @@ $(function() {
 
 			// Set the message text.
 			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
+				$(formMessages).text('Oops! An error occured and your message could not be sent.');
 			} else {
 				$(formMessages).text('Oops! An error occured and your message could not be sent.');
 			}
