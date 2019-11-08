@@ -6,7 +6,8 @@ $(function() {
     
     $(window).on('load', function(event) {
         $('#preloader').delay(500).fadeOut(500);
-        $(".owl-carousel").owlCarousel({
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
             center: true,
             items: 6,
             autoHeight: true,
@@ -18,6 +19,14 @@ $(function() {
                     center: false
                 }
             }
+        });
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY > 0) {
+                owl.trigger('next.owl');
+            } else {
+                owl.trigger('prev.owl');
+            }
+            e.preventDefault();
         });
     });
     
