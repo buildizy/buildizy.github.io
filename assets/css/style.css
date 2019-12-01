@@ -747,7 +747,42 @@ p.form-message.error {
   color: #f00; }
 
 /*===========================
-       9.FOOTER css 
+      9.TODAY css 
+===========================*/
+#today-video-bkg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#today-video-bkg-gradient-overlay {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,149,10,0.6222864145658263) 100%);
+}
+
+#today {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 35%;
+  transform: translateY(-35%);
+}
+
+#today-mockup {
+  height: 85vh;
+}
+
+/*===========================
+       10.FOOTER css 
 ===========================*/
 .footer-area {
   background-color: #f4f6f7; }
