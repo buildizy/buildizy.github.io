@@ -782,7 +782,23 @@ p.form-message.error {
 }
 
 /*===========================
-       10.FOOTER css 
+      10.PRIVACY POLICY css 
+===========================*/
+.today-privacy-policy-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #fff; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .today-privacy-policy-area {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  @media (max-width: 767px) {
+    .today-privacy-policy-area {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+
+/*===========================
+       11.FOOTER css 
 ===========================*/
 .footer-area {
   background-color: #f4f6f7; }
