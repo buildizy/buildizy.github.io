@@ -105,12 +105,78 @@
             <a class="d-none d-lg-block" href="https://play.google.com/store/apps/details?id=com.sidevesh.todayinlife&hl=en_IN&utm_source=buildizy-landing&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" style="margin-bottom:16px;">
               <img alt="Get it on Google Play" src="/assets/images/today/play_en_badge_web_generic.png" style="height:50px;width:auto;"/>
             </a>
+            <!--====== SUPPORT MODAL TRIGGER START ======-->
+            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#supportContactModal" style="color:#393939;">
+              Need support ?
+            </button>
+            <!--====== SUPPORT MODAL TRIGGER ENDS ======-->
           </div>
         </div>
       </div>
     </section>
     <!--====== TODAY PART ENDS ======-->
     
+    <!--====== SUPPORT MODAL START ======-->
+    <div class="modal fade" id="supportContactModal" tabindex="-1" role="dialog" aria-labelledby="supportContactModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Need help ?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!--====== CONTACT PART START ======-->
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="contact-form">
+                    <form id="contact-form" accept-charset="UTF-8" action="https://www.formbackend.com/f/41c4270ba34b0fe1" method="post" data-toggle="validator">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="single-form form-group">
+                            <input type="text" name="name" placeholder="Your Name" data-error="Name is required." required="required">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="single-form form-group">
+                            <input type="email" name="email" placeholder="Your Email" data-error="Valid email is required." required="required">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="single-form form-group">
+                            <input type="text" name="subject" placeholder="Subject" data-error="Subject is required." required="required">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="single-form form-group">
+                            <textarea placeholder="Your Mesaage" name="message" data-error="Please, leave us a message." required="required"></textarea>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <p class="form-message"></p>
+                        <div class="col-md-12">
+                          <div class="single-form form-group text-center">
+                            <button type="submit" class="btn btn-primary main-btn">send message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--====== CONTACT PART ENDS ======-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--====== SUPPORT MODAL ENDS ======-->
+
     <!--====== BACK TO TOP PART START ======-->
     <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
     <!--====== BACK TO TOP PART ENDS ======-->
@@ -127,6 +193,18 @@
     <script src="/assets/js/jquery.mousewheel.min.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
     <script src="/assets/js/main.js"></script>
+
+    <!--====== SUPPORT MODAL AUTOSHOW START ======-->
+    <script>
+      $(document).ready(function() {
+        var checkForSupportModalUrlParams = new URLSearchParams(window.location.search);
+        if (checkForSupportModalUrlParams.get('support') === '1') {
+          $('#supportContactModal').modal('show');
+        }
+      });
+    </script>
+    <!--====== SUPPORT MODAL AUTOSHOW ENDS ======-->
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
